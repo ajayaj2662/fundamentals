@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Basic Language of the Web: HTML5</title>
+    <link href="style.css" rel="stylesheet"> 
 </head>
 <body>
-    <header>
+    <header class="main-header">
     <h1>📘 The Code Magazine </h1>
-    
     <div>
     <a href="blog.html">Blog</a>
     <a href="#">Challanges</a>
@@ -19,11 +19,11 @@
     <article>
     <header>
         <h2>The Basic Language of the Web: HTML</h2>
-    <img src="laura-jones.jpg" alt="laura-jones image" width="50" height="50" />
+    <img src="img/laura-jones.jpg" alt="laura-jones image" width="50" height="50" />
 
-    <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
+    <p id="author">Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
 
-    <img src="post-img.jpg" alt="Code-img" width="400" height="200"/>
+    <img src="img/post-img.jpg" alt="Code-img" width="400" height="200"/>
     </header>
     <p>All modern websites and web applications are built using three <i>fundamental</i> technologies: HTML, CSS and JavaScript. 
         These are the languages of the web.</p>
@@ -56,9 +56,31 @@
 
     <p>Hopefully you learned something new here. See you next time!</p>
 </article>
+<aside>
+    <h4>Related Post</h4>
+    <ul class="related">
+        <li>
+            <img src="img/related-1.jpg" alt="related post 1" width="70" height="70"/>
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author"> By Jonas schmedmann</p>
+        </li>
 
+        <li>
+            <img src="img/related-2.jpg" alt="related post 2" width="70" height="70"/>
+            <a href="#">The Unknown power of CSS</a>
+            <p class="related-author"> By Jim Dillon</p>
+        </li>
+
+        <li>
+            <img src="img/related-3.jpg" alt="related post 3" width="70" height="70"/>
+            <a href="#">Why javascript is Awesome</a>
+            <p class="related-author"> By Matilda</p>
+        </li>
+
+    </ul>
+</aside>
 <Footer>
-    Copyright &copy; 2027 by the code Magazine. 
+    <p id="Copyright">Copyright &copy; 2027 by the code Magazine.</p> 
 </Footer>
 </body>
 </html>
